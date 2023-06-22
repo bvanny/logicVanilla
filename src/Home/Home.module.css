@@ -1,0 +1,45 @@
+.home {
+  display: grid;
+  place-content: center;
+  min-height: calc(100vh - 6.5rem);
+  padding-top: 4.5rem;
+}
+
+.home section {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1275px;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 2rem 2rem;
+  opacity: 0;
+  animation: homeAnim 600ms forwards 300ms;
+  transform: translateY(50px);
+}
+
+@keyframes homeAnim {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.home section div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.containerVideo {
+  background: var(--color-gradient);
+  border-radius: 5px;
+  padding: 3rem 3rem;
+  max-width: 400px;
+}
